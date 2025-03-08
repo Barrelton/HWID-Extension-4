@@ -1,0 +1,120 @@
+--[[ CHANGELOG:
+	- added support for 2nd zone
+	- removed it copying the game link (check console if you need it)
+	- prints changelog
+3/8/25 (month day year)
+______________________
+CHANGELOG: 
+	- fixed support for 2nd zone
+	- added support for 3rd zone (space gym, quickest one but a little glitchy)
+	- added rayfield gui so things can actually work properly
+]]
+
+print([[CHANGELOG: 
+				- fixed support for 2nd zone
+				- added support for 3rd zone (space gym, quickest one but a little glitchy)
+				- added rayfield gui so things can actually work properly
+]])
+
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+	Name = 'HWID Extension 4 | Gym Star Simulator',
+	Icon = 0,
+	LoadingTitle = 'HWID Extension 4',
+	LoadingSubtitle = 'by Barrelton',
+	Theme = 'Default',
+
+	DisableRayfieldPrompts = false,
+	DisableBuildWarnings = false,
+
+	ConfigurationSaving = {
+		Enabled = true,
+		FolderName = nil,
+		FileName = 'HWIDExtension4',
+	},
+
+	Discord = {
+		Enabled = false,
+		Invite = 'noinvitelink',
+		RememberJoins = true,
+	},
+
+	KeySystem = true,
+	KeySettings = {
+		Title = 'Key is "E416"',
+		Subtitle = 'Key is E416',
+		Note = 'Key is E416',
+		FileName = 'Key',
+		SaveKey = true,
+		GrabKeyFromSite = false,
+		Key = { 'E416' },
+	},
+})
+
+local Tab = Window:CreateTab('|Game|', 0)
+
+local TTab = Window:CreateTab('|Universal|', 0)
+
+-- Buttons lol, Barrelton was here
+
+local Button = Tab:CreateButton({
+	Name = '|Zone 1 break machines|',
+	Callback = function()
+		loadstring(
+			'\32\10\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\39\104\116\116\112\115\58\47\47\112\97\115\116\101\46\101\101\47\114\47\103\52\49\87\69\84\84\100\47\48\39\41\41\40\41\10'
+		)()
+	end,
+})
+
+local Button = Tab:CreateButton({
+	Name = '|Zone 2 break machines|',
+	Callback = function()
+		loadstring(game:HttpGet('https://paste.ee/r/90FH2VLM/0'))()
+	end,
+})
+
+local Button = Tab:CreateButton({
+	Name = '|Zone 3 break all machines|',
+	Callback = function()
+		loadstring(game:HttpGet('https://paste.ee/r/7mqk4nAE/0'))()
+	end,
+})
+
+-- Tab 2
+
+local Button = TTab:CreateButton({
+	Name = 'Nameless Admin',
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/main/Source.lua',true))()
+	end,
+})
+
+local Button = TTab:CreateButton({
+	Name = 'Alternate Nameless Admin',
+	Callback = function()
+		loadstring(
+			game:HttpGet(
+				'https://raw.githubusercontent.com/FD2Team/Nameless-Admin-No-Byfron-Kick/main/Source',
+				true
+			)
+		)()
+	end,
+})
+
+-- Finalization
+print('1      1     1       1       1     1 1 1 1 1       1 1 1')
+print('1      1      1     1 1     1          1           1    1')
+print('1 1  1 1       1   1   1   1           1           1     1')
+print('1      1        1 1     1 1            1           1    1')
+print('1      1         1       1         1 1 1 1 1       1 1 1')
+print('                                                        ')
+print('=====================================================')
+print('                                                      ')
+print('1      1      1    1       1 1   ')
+print('1      1      1    1       1   1 ')
+print('1 1  1 1      1    1       1 1   ')
+print('1      1      1    1       1   1 ')
+print('1      1       1111        1 1   ')
+print('                                 ')
+print('Script made by Barrelton, (barreltonisreborn on discord)')
